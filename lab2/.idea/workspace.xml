@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a65e7f5b-0cd7-4341-9b5f-2cfce349cd5f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jB3JbQ68wTleRRfPEE9xny34Ui" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="lab2" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/lab2.txt" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a65e7f5b-0cd7-4341-9b5f-2cfce349cd5f" name="Default Changelist" comment="" />
+      <created>1603263588917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603263588917</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="534" y="216" key="#Template" timestamp="1603789860286">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="534" y="216" key="#Template/0.0.1876.1080@0.0.1876.1080" timestamp="1603789860286" />
+    <state x="397" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603822153171">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="397" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1876.1080@0.0.1876.1080" timestamp="1603822153171" />
+    <state x="747" y="258" key="#com.intellij.ide.util.MemberChooser" timestamp="1603827016109">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="747" y="258" key="#com.intellij.ide.util.MemberChooser/0.0.1876.1080@0.0.1876.1080" timestamp="1603827016109" />
+    <state x="720" y="284" key="FileChooserDialogImpl" timestamp="1603869362163">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="720" y="284" key="FileChooserDialogImpl/0.0.1876.1080@0.0.1876.1080" timestamp="1603869362163" />
+    <state width="1830" height="280" key="GridCell.Tab.0.bottom" timestamp="1603868890487">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="280" key="GridCell.Tab.0.bottom/0.0.1876.1080@0.0.1876.1080" timestamp="1603868890487" />
+    <state width="1830" height="280" key="GridCell.Tab.0.center" timestamp="1603868890486">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="280" key="GridCell.Tab.0.center/0.0.1876.1080@0.0.1876.1080" timestamp="1603868890486" />
+    <state width="1830" height="280" key="GridCell.Tab.0.left" timestamp="1603868890485">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="280" key="GridCell.Tab.0.left/0.0.1876.1080@0.0.1876.1080" timestamp="1603868890485" />
+    <state width="1830" height="280" key="GridCell.Tab.0.right" timestamp="1603868890487">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="280" key="GridCell.Tab.0.right/0.0.1876.1080@0.0.1876.1080" timestamp="1603868890486" />
+    <state width="1830" height="357" key="GridCell.Tab.1.bottom" timestamp="1603823542141">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="357" key="GridCell.Tab.1.bottom/0.0.1876.1080@0.0.1876.1080" timestamp="1603823542141" />
+    <state width="1830" height="357" key="GridCell.Tab.1.center" timestamp="1603823542141">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="357" key="GridCell.Tab.1.center/0.0.1876.1080@0.0.1876.1080" timestamp="1603823542141" />
+    <state width="1830" height="357" key="GridCell.Tab.1.left" timestamp="1603823542141">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="357" key="GridCell.Tab.1.left/0.0.1876.1080@0.0.1876.1080" timestamp="1603823542141" />
+    <state width="1830" height="357" key="GridCell.Tab.1.right" timestamp="1603823542141">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state width="1830" height="357" key="GridCell.Tab.1.right/0.0.1876.1080@0.0.1876.1080" timestamp="1603823542141" />
+    <state x="442" y="175" width="992" height="732" key="SettingsEditor" timestamp="1603866258185">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="442" y="175" width="992" height="732" key="SettingsEditor/0.0.1876.1080@0.0.1876.1080" timestamp="1603866258185" />
+    <state x="663" y="273" width="540" height="524" key="StructurePopup" timestamp="1603833077878">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="663" y="273" width="540" height="524" key="StructurePopup/0.0.1876.1080@0.0.1876.1080" timestamp="1603833077878" />
+    <state x="642" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603818392828">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="642" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1876.1080@0.0.1876.1080" timestamp="1603818392828" />
+    <state x="463" y="268" width="950" height="638" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603821991980">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="463" y="268" width="950" height="638" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1876.1080@0.0.1876.1080" timestamp="1603821991980" />
+    <state x="313" y="153" width="1247" height="776" key="new project wizard" timestamp="1603869392657">
+      <screen x="0" y="0" width="1876" height="1080" />
+    </state>
+    <state x="313" y="153" width="1247" height="776" key="new project wizard/0.0.1876.1080@0.0.1876.1080" timestamp="1603869392657" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NegativeArraySizeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
