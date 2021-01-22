@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Carnation extends Flower {
 
-    public Carnation() {
-        super();
+    public Carnation(Scanner in) {
+        super(in);
         name = "Carnation";
         chooseButtonSize();
         chooseLength();
@@ -20,7 +20,6 @@ public class Carnation extends Flower {
                 + "\t\t2 - pink\n"
                 + "\t\t3 - white\n"
                 + "\t\t4 - violet\n\t\t");
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 2:
                 color = "pink";
@@ -37,7 +36,6 @@ public class Carnation extends Flower {
     }
 
     protected void chooseButtonSize() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter button size of %s: ", name);
             buttonSize = in.nextInt();
@@ -45,7 +43,6 @@ public class Carnation extends Flower {
     }
 
     protected void chooseLength() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter length of %s: ", name);
             length = in.nextInt();

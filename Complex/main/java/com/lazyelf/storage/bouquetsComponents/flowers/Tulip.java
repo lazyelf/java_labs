@@ -2,16 +2,16 @@ package com.lazyelf.storage.bouquetsComponents.flowers;
 
 import java.util.Scanner;
 
-public class Rose extends Flower {
+public class Tulip extends Flower {
 
-    public Rose() {
-        super();
-        name = "Rose";
+    public Tulip(Scanner in) {
+        super(in);
+        name = "Tulip";
         chooseButtonSize();
         chooseLength();
         chooseColor();
         setPrice();
-        verdure = 8;
+        verdure = 9;
     }
 
     protected void chooseColor() {
@@ -19,10 +19,9 @@ public class Rose extends Flower {
         System.out.print("\t\t1 - wine\n"
                 + "\t\t2 - blue\n"
                 + "\t\t3 - yellow\n"
-                + "\t\t4 - black\n"
+                + "\t\t4 - lime\n"
                 + "\t\t5 - pink\n"
                 + "\t\t6 - white\n\t\t");
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 2:
                 color = "blue";
@@ -31,7 +30,7 @@ public class Rose extends Flower {
                 color = "yellow";
                 break;
             case 4:
-                color = "black";
+                color = "lime";
                 break;
             case 5:
                 color = "pink";
@@ -45,22 +44,21 @@ public class Rose extends Flower {
     }
 
     protected void chooseButtonSize() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter button size of %s: ", name);
             buttonSize = in.nextInt();
-        } while (buttonSize < 7 || buttonSize > 25);
+        } while (buttonSize < 5 || buttonSize > 10);
     }
 
     protected void chooseLength() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter length of %s: ", name);
             length = in.nextInt();
-        } while (length < 30 || length > 120);
+        } while (length < 20 || length > 40);
     }
 
     protected void setPrice() {
-        price = (1 / (double) buttonSize * 15 + (double) length / 3);
+        price = (1 / (double) buttonSize * 15 + (double) length / 7) * 10;
     }
 }
+

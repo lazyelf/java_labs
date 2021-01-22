@@ -2,16 +2,16 @@ package com.lazyelf.storage.bouquetsComponents.flowers;
 
 import java.util.Scanner;
 
-public class Orchid extends Flower {
+public class Chrysanthemum extends Flower {
 
-    public Orchid() {
-        super();
-        name = "Orchid";
+    public Chrysanthemum(Scanner in) {
+        super(in);
+        name = "Chrysanthemum";
         chooseButtonSize();
         chooseLength();
         chooseColor();
         setPrice();
-        verdure = 12;
+        verdure = 18;
     }
 
     protected void chooseColor() {
@@ -21,10 +21,7 @@ public class Orchid extends Flower {
                 + "\t\t3 - yellow\n"
                 + "\t\t4 - lime\n"
                 + "\t\t5 - pink\n"
-                + "\t\t6 - white\n"
-                + "\t\t7 - black\n"
-                + "\t\t8 - violet\n\t\t");
-        Scanner in = new Scanner(System.in);
+                + "\t\t6 - white\n\t\t");
         switch (in.nextInt()) {
             case 2:
                 color = "blue";
@@ -40,11 +37,6 @@ public class Orchid extends Flower {
                 break;
             case 6:
                 color = "white";
-            case 7:
-                color = "black";
-                break;
-            case 8:
-                color = "violet";
                 break;
             default:
                 color = "wine";
@@ -52,22 +44,22 @@ public class Orchid extends Flower {
     }
 
     protected void chooseButtonSize() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter button size of %s: ", name);
             buttonSize = in.nextInt();
-        } while (buttonSize < 5 || buttonSize > 10);
+        } while (buttonSize < 5 || buttonSize > 20);
     }
 
     protected void chooseLength() {
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter length of %s: ", name);
             length = in.nextInt();
-        } while (length < 10 || length > 50);
+        } while (length < 10 || length > 70);
     }
 
     protected void setPrice() {
-        price = (buttonSize * 2 + (double) length / 3) * 2;
+        if (buttonSize <= 10)
+            price = (buttonSize + (double) length / 4);
+        else price = (buttonSize + (double) length / 5) * 4;
     }
 }

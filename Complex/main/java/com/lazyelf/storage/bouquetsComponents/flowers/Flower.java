@@ -12,21 +12,22 @@ public abstract class Flower implements Serializable {
     protected int verdure;
     protected String color;
     protected double price;
+    static transient Scanner in = null;
 
-    public Flower() {
+    public Flower(Scanner in) {
+        Flower.in = in;
         timeOfLife = LocalDate.now();
     }
 
-    public boolean checkVerdure() {
+    public boolean checkVerdure(LocalDate date) {
         LocalDate temp = timeOfLife.plusDays(verdure);
-        return LocalDate.now().isAfter(temp);
+        return date.isAfter(temp);
     }
 
     public void changeFlower() {
         System.out.print("\t\t1 - change button size\n"
                 + "\t\t2 - change length\n"
                 + "\t\t3 - change color\n\t\t");
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 1:
                 chooseButtonSize();
@@ -61,7 +62,7 @@ public abstract class Flower implements Serializable {
     }
 
     public double getPrice() {
-        return price;
+        return Math.ceil(price * 100) / 100;
     }
 
     public int getButtonSize() {
@@ -71,4 +72,5 @@ public abstract class Flower implements Serializable {
     public int getLength() {
         return length;
     }
+
 }

@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Tree extends Leaf {
 
-    public Tree() {
+    public Tree(Scanner in) {
+        super(in);
         name = "Tree";
         price = 4;
-        Scanner in = new Scanner(System.in);
         do {
             System.out.printf("\t\tEnter length of %s: ", name);
             length = in.nextInt();
-        } while (length <= 10 || length >= 30);
+        } while (length < 10 || length > 30);
         chooseColor();
     }
 
@@ -21,7 +21,6 @@ public class Tree extends Leaf {
                 + "\t\t2 - yellow\n"
                 + "\t\t3 - brown\n"
                 + "\t\t4 - red\n\t\t");
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 2:
                 color = "yellow";

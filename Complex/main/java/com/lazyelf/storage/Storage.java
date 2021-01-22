@@ -5,11 +5,13 @@ import com.lazyelf.storage.bouquetsComponents.flowers.*;
 import com.lazyelf.storage.bouquetsComponents.leaves.*;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
 
 public class Storage implements Serializable {
+    static transient Scanner in = null;
     private final ArrayList<Flower> flowers = new ArrayList<>();
     private final ArrayList<Leaf> leaves = new ArrayList<>();
     private final ArrayList<Bouquet> bouquets = new ArrayList<>();
@@ -19,8 +21,13 @@ public class Storage implements Serializable {
     public static Comparator<Flower> FlowerButtonSize = Comparator.comparingInt(Flower::getButtonSize);
     public static Comparator<Bouquet> BouquetPrice = Comparator.comparingDouble(Bouquet::getValue);
 
+    public Storage(Scanner in) {
+        if (Storage.in == null)
+            Storage.in = in;
+    }
+
     public void cleanFlowers() {
-        flowers.removeIf(Flower::checkVerdure);
+        flowers.removeIf(flower -> flower.checkVerdure(LocalDate.now()));
         System.out.println("\tFlowers cleaned.");
     }
 
@@ -34,28 +41,27 @@ public class Storage implements Serializable {
                 + "\t\t6 - Rose\n"
                 + "\t\t7 - Tulip\n\t\t");
         Flower flower;
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 1:
-                flower = new Carnation();
+                flower = new Carnation(in);
                 break;
             case 2:
-                flower = new Chamomile();
+                flower = new Chamomile(in);
                 break;
             case 3:
-                flower = new Chrysanthemum();
+                flower = new Chrysanthemum(in);
                 break;
             case 4:
-                flower = new Orchid();
+                flower = new Orchid(in);
                 break;
             case 5:
-                flower = new Peony();
+                flower = new Peony(in);
                 break;
             case 6:
-                flower = new Rose();
+                flower = new Rose(in);
                 break;
             case 7:
-                flower = new Tulip();
+                flower = new Tulip(in);
                 break;
             default:
                 return;
@@ -104,9 +110,8 @@ public class Storage implements Serializable {
 
     public void createBouquet() {
         System.out.println("\t\tCreating bouquet...");
-        Scanner in = new Scanner(System.in);
         System.out.print("\t\tEnter bouquet name: ");
-        Bouquet b = new Bouquet(in.nextLine());
+        Bouquet b = new Bouquet(in.nextLine(), in);
 
         showFlowers();
         if (flowers.size() != 0) {
@@ -216,7 +221,6 @@ public class Storage implements Serializable {
                 + "\t\t\t12 - show bouquet that is in change process\n"
                 + "\t\t\t13 - return\n\t\t\t");
         int add;
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 1:
                 System.out.print("\t\tEnter order of flower to change: ");
@@ -287,19 +291,18 @@ public class Storage implements Serializable {
                 + "\t\t3 - Palm\n"
                 + "\t\t4 - Tree\n\t\t");
         Leaf leaf;
-        Scanner in = new Scanner(System.in);
         switch (in.nextInt()) {
             case 1:
-                leaf = new Fern();
+                leaf = new Fern(in);
                 break;
             case 2:
-                leaf = new Lavender();
+                leaf = new Lavender(in);
                 break;
             case 3:
-                leaf = new Palm();
+                leaf = new Palm(in);
                 break;
             case 4:
-                leaf = new Tree();
+                leaf = new Tree(in);
                 break;
             default:
                 return;
@@ -328,7 +331,7 @@ public class Storage implements Serializable {
 
     public void addDecoration() {
         System.out.println("\t\tAdding decoration...");
-        decorations.add(new Decoration());
+        decorations.add(new Decoration(in));
     }
 
     public void removeDecoration(int order) {
@@ -348,5 +351,10 @@ public class Storage implements Serializable {
                 ++i;
             }
         } else System.out.println("\t\tYou have no decorations.");
+    }
+
+    public void setIn(Scanner in)
+    {
+        Storage.in = in;
     }
 }

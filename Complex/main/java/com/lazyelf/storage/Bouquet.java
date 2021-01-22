@@ -15,12 +15,15 @@ public class Bouquet implements Serializable {
     private final ArrayList<Decoration> decorations = new ArrayList<>();
     private double price;
     private final String name;
+    static transient Scanner in = null;
 
     public static Comparator<Flower> FlowerLength = Comparator.comparingInt(Flower::getLength);
     public static Comparator<Flower> FlowerButtonSize = Comparator.comparingInt(Flower::getButtonSize);
 
-    public Bouquet(String name) {
+    public Bouquet(String name, Scanner in) {
         this.name = name;
+        if (Bouquet.in == null)
+            Bouquet.in = in;
     }
 
     public void addFlower(Flower f) {
@@ -65,7 +68,6 @@ public class Bouquet implements Serializable {
 
     public void findFlowerByLength() {
         System.out.print("\t\t\tEnter range of flower length: ");
-        Scanner in = new Scanner(System.in);
         int begin = in.nextInt(), end = in.nextInt();
         for (Flower f : flowers) {
             if (f.getLength() >= begin && f.getLength() <= end) {
@@ -76,7 +78,6 @@ public class Bouquet implements Serializable {
 
     public void findFlowerByButtonSize() {
         System.out.print("\t\t\tEnter range of flower button size: ");
-        Scanner in = new Scanner(System.in);
         int begin = in.nextInt(), end = in.nextInt();
         for (Flower f : flowers) {
             if (f.getButtonSize() >= begin && f.getButtonSize() <= end) {
@@ -107,7 +108,7 @@ public class Bouquet implements Serializable {
         for (Decoration d : decorations) {
             price += d.getPrice();
         }
-        return price;
+        return Math.ceil(price * 100) / 100;
     }
 
     @Override
@@ -141,6 +142,10 @@ public class Bouquet implements Serializable {
         }
 
         return result.toString();
+    }
+
+    public void setIn(Scanner in) {
+        Bouquet.in = in;
     }
 
     public boolean isNotEmpty() {

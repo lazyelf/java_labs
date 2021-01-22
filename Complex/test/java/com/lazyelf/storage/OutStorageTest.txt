@@ -1,0 +1,11 @@
+		List of bouquets:
+		1. Bouquet B2 with price 229.0
+				Flowers:
+					1. Flower red Carnation with length 70 with button size 10 price - 24.0
+					2. Flower while Chamomile with length 70 with button size 15 price - 29.0
+					3. Flower wine Chrysanthemum with length 70 with button size 20 price - 136.0
+				Leaves:
+					1. Leaf green Fern with length 30 price - 10.0
+				Decorations:
+					1. Decoration Basket price - 30.0
+
